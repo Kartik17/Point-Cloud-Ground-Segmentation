@@ -1,6 +1,7 @@
 # Ground-Segmentation-Lidar
 
 Ground Segmentation Package in ROS.
+python 2.7
 
 Change the pcd file path in pcd_visualize.py script,
 Change the pkg name in roslaunch to your package name
