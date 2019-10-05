@@ -72,15 +72,12 @@ if __name__ == '__main__':
     pcl_pub = rospy.Publisher("/pcl_full_scene",PointCloud2,queue_size=10)
     
     p = pcl.PointCloud()
-    #p_load = pcl.load_XYZI("/home/kartik/python_scripts/lidar_apc.pcd")
-    #p.from_file("/home/kartik/pcd_files/zf/004876.pcd")
-    with open('/home/kartik/python_scripts/KITTI/training/velodyne/000000.bin', mode='rb') as file: # b is important -> binary
+    with open('../sample_kitti_data/000000.bin', mode='rb') as file: # b is important -> binary
         fileContent = file.read()
     point_array = parse_bin_data(fileContent)
     p.from_list(point_array)
     ros_pointcloud = pcl_to_ros(p)
-    
-    #ros_pointcloud_not_rotated = pcl_to_ros(p1)
+
     rate = rospy.Rate(10)
 
     while not rospy.is_shutdown():
