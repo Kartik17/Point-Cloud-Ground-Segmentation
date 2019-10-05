@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <node pkg="annt" type="pcd_visualize.py" name="pcd_visualize"/>
+  <node pkg="rviz" type="rviz" name="rviz"/>
+  <node pkg="annt" type="new_frame.py" name="new_frame" args="world"/>
+  <node pkg="annt" type="ground_segmentation.py" name="ground_segmentation"/>
+</launch>
