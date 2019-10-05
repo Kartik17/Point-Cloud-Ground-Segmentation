@@ -11,7 +11,7 @@ roslaunch pkg_name ground_segment.launch
 # Visualization
 
 KITTI Scene
-![KITTI Scene](/images/image.png)
+![KITTI Scene](/images/Kitti_dataset.png)
 
 
 KITTI Scene after Ground Segmentation
