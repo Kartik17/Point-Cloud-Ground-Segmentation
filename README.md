@@ -2,11 +2,10 @@
 
 Ground Segmentation Package in ROS.
 
-Currently run using rosrun each nodes, will update roslaunch file soon.
+Change the pcd file path in pcd_visualize.py script,
+Change the pkg name in roslaunch to your package name
 
-For node "new_frame.py" add arg - "world"
-
-EX: rosrun pkg_name new_frame.py "world"
+roslaunch pkg_name ground_segment.launch
 
 
 # Visualization
